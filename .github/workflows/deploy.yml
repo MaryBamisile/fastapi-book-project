@@ -39,6 +39,9 @@ jobs:
             docker --version
             docker-compose --version
 
+            # Free up port 80
+            sudo fuser -k 80/tcp
+
             # Navigate to the project directory and deploy
             cd /home/Maria/
             cd fastapi-book-project/
