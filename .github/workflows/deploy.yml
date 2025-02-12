@@ -43,7 +43,6 @@ jobs:
             sudo fuser -k 80/tcp
 
             # Navigate to the project directory and deploy
-            git clone https://github.com/MaryBamisile/fastapi-book-project.git
             cd /home/azureuser/
             cd fastapi-book-project/
             git pull
