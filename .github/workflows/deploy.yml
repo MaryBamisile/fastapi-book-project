@@ -43,7 +43,8 @@ jobs:
             sudo fuser -k 80/tcp
 
             # Navigate to the project directory and deploy
-            cd /home/Maria/
+            git clone https://github.com/MaryBamisile/fastapi-book-project.git
+            cd /home/azureuser/
             cd fastapi-book-project/
             git pull
             sudo docker-compose up -d --build
