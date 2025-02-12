@@ -39,13 +39,9 @@ jobs:
             docker --version
             docker-compose --version
 
-            # Free up port 80
-            sudo fuser -k 80/tcp
-
             # Navigate to the project directory and deploy
             git clone https://github.com/MaryBamisile/fastapi-book-project.git
             cd /home/azureuser/
             cd fastapi-book-project/
             git pull
-            sudo docker-compose up -d --build
-          
+            sudo docker-compose up -d --build       
